@@ -25,7 +25,7 @@ The dataset simulates the ages of 250 individuals in a fictional population of L
 - **Styling:** 
   - **Header Font:** Comics Sans MS, 12pt, blue color.
   - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
+  - **Cell Background:** Whitee with no borders or lines outside the table.
 
 ### Sheet 2. `Data`
 
