@@ -74,7 +74,6 @@ The dataset simulates the ages of 250 individuals in a fictional population of L
   - **Number of Cats:** Random numbers from 1 to 7.
   - **Age of Partner:** Age calculated based on correlation and other variables.
   - **Correlation Analysis:** Calculates and explains the correlation between age and the number of cats.
-  - **Desired Correlation:** A correlation value you aim to achieve.
   - **Actual Correlation:** The actual calculated correlation.
   - **Explanation:** A text box explaining the results of the correlation analysis.
 - **Styling:** 
