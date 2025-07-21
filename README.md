@@ -11,18 +11,23 @@ L'azienda intende generare dati casuali ma significativi riguardanti la popolazi
 Scheda 1: ***Parameters***
 - **Obiettivo:** Fornire un'interfaccia per inserire i parametri della distribuzione normale (probabilità, media, deviazione standard).
 - **Stile e Formattazione:** Intestazione con font "Comics Sans MS", dimensione 12pt, colore blu, bordi doppi. Celle dei valori riquadrate con bordo nero sottile.
+
 Scheda 2: ***Data***
 - **Obiettivo:** Visualizzare i dati generati per le età dei 250 individui e suddividere la popolazione in gruppi casuali.
 - **Stile e Formattazione:** Colonna A per le età generate, colonna B per il gruppo di appartenenza generato casualmente. Intestazione con font "Comics Sans MS", 12pt, colore blu, bordi doppi.
+
 Scheda 3: ***Sample***
 - **Obiettivo:** Selezionare un sotto-campione dai dati generati in base al gruppo di appartenenza.
 - **Stile e Formattazione:** Colonne A-C per dati di età, gruppo, e sotto-campione scelto. Utilizzo della funzione condizionale SE.
+
 Scheda 4: ***Statistical Insight***
 - **Obiettivo:** Analizzare statisticamente i dati del campione selezionato, calcolando valori chiave come deviazione standard, valore atteso, e intervallo di confidenza.
 - **Stile e Formattazione:** Colonne per STDDEV, EXPECTED VALUE, COUNT, CONFIDENCE RATE, Estimation of p parameter, Confidence Interval. Cella di testo per spiegazione dettagliata.
+
 Scheda 5: ***(Un)correlated Variables***
 - **Obiettivo:** Testare la correlazione tra le età del campione e altre variabili casuali, come il numero di gatti posseduti o l'età del partner.
 - **Stile e Formattazione:** Colonne per Sample data, Number of cats, Age of partner. Calcolo della correlazione e spiegazione dei risultati.
+
 Scheda 6: ***Linear Regression***
 - **Obiettivo:** Eseguire una regressione lineare tra l’età degli individui e il loro ordine di censimento.
 - **Stile e Formattazione:** Colonne per Y (age), X (rank). Grafico scatterplot con regressione lineare per il partecipante 160.
