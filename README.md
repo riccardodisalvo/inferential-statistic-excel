@@ -1,96 +1,39 @@
-## Project Overview
+# Contesto e Obiettivo del Progetto
 
-This project is designed to consolidate the concepts learned in the course of inferential statistics with Excel that I learned in my MA in Data Analytics by generating and analyzing data. The Excel workbook consists of 6 sheets, each dedicated to different aspects of data manipulation and analysis. The dataset simulates the ages of a population and involves statistical operations including sampling, correlation analysis, and linear regression.
+In un’azienda data-driven, la capacità di generare e manipolare dati verosimili è essenziale per simulare scenari reali, supportare la formazione dei dipendenti e testare ipotesi di mercato. Questo progetto si concentra sulla creazione di un dataset realistico utilizzando un foglio di calcolo, con l'obiettivo di fornire uno strumento efficace per testare tecniche di analisi statistica e modelli di previsione.
 
-### Dataset Description
+# Descrizione del Progetto
 
-The dataset simulates the ages of 250 individuals in a fictional population of Luggnagg. The data is generated using a normal distribution with specified parameters.
+L'azienda intende generare dati casuali ma significativi riguardanti la popolazione immaginaria di "Luggnagg". Il focus è su una distribuzione normale per l’età della popolazione, che simuli un campione di 250 individui. Il foglio di calcolo creato sarà strutturato in più schede (tab), ognuna con una funzione specifica che riflette i concetti di statistica appresi.
 
-**Dataset Structure:**
-- **Number of Rows:** 250
-- **Number of Columns:** 2
-- **Columns:**
-  - **Age:** The age of the individual.
-  - **Group:** A randomly assigned group number from 1 to 4.
+# Struttura del Foglio di Calcolo
 
-## Excel Workbook Structure
+Scheda 1: ***Parameters***
+- **Obiettivo:** Fornire un'interfaccia per inserire i parametri della distribuzione normale (probabilità, media, deviazione standard).
+- **Stile e Formattazione:** Intestazione con font "Comics Sans MS", dimensione 12pt, colore blu, bordi doppi. Celle dei valori riquadrate con bordo nero sottile.
+Scheda 2: ***Data***
+- **Obiettivo:** Visualizzare i dati generati per le età dei 250 individui e suddividere la popolazione in gruppi casuali.
+- **Stile e Formattazione:** Colonna A per le età generate, colonna B per il gruppo di appartenenza generato casualmente. Intestazione con font "Comics Sans MS", 12pt, colore blu, bordi doppi.
+Scheda 3: ***Sample***
+- **Obiettivo:** Selezionare un sotto-campione dai dati generati in base al gruppo di appartenenza.
+- **Stile e Formattazione:** Colonne A-C per dati di età, gruppo, e sotto-campione scelto. Utilizzo della funzione condizionale SE.
+Scheda 4: ***Statistical Insight***
+- **Obiettivo:** Analizzare statisticamente i dati del campione selezionato, calcolando valori chiave come deviazione standard, valore atteso, e intervallo di confidenza.
+- **Stile e Formattazione:** Colonne per STDDEV, EXPECTED VALUE, COUNT, CONFIDENCE RATE, Estimation of p parameter, Confidence Interval. Cella di testo per spiegazione dettagliata.
+Scheda 5: ***(Un)correlated Variables***
+- **Obiettivo:** Testare la correlazione tra le età del campione e altre variabili casuali, come il numero di gatti posseduti o l'età del partner.
+- **Stile e Formattazione:** Colonne per Sample data, Number of cats, Age of partner. Calcolo della correlazione e spiegazione dei risultati.
+Scheda 6: ***Linear Regression***
+- **Obiettivo:** Eseguire una regressione lineare tra l’età degli individui e il loro ordine di censimento.
+- **Stile e Formattazione:** Colonne per Y (age), X (rank). Grafico scatterplot con regressione lineare per il partecipante 160.
 
-### Sheet 1. `Parameters`
+# Valore Aziendale del Progetto
 
-- **Description:** This sheet contains the parameters used for generating the age data.
-- **Contents:**
-  - **Probability:** The probability value.
-  - **Mean:** The mean age of the population.
-  - **StdDev:** The standard deviation of the age distribution.
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** Whitee with no borders or lines outside the table.
+- Simulazione di scenari reali: I dati generati imitano una popolazione reale, fornendo un ambiente sicuro per testare   metodi di analisi statistica e machine learning.
+- Miglioramento delle competenze: Il progetto serve come esercizio pratico per dipendenti e data analyst che             desiderano migliorare le proprie competenze in gestione e manipolazione dati.
+- Decisioni basate sui dati: Gli insight derivati dall'analisi statistica del dataset consentono all'azienda di          formare dipendenti capaci di interpretare e utilizzare i dati per prendere decisioni aziendali basate su evidenze      numeriche.
 
-### Sheet 2. `Data`
+# Contributi
 
-- **Description:** This sheet contains the generated age data and group assignments.
-- **Contents:**
-  - **Age:** A column with the ages of 250 individuals.
-  - **Groups:** Randomly assigned group numbers between 1 and 4.
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
-
-### Sheet 3. `Sample`
-
-- **Description:** This sheet includes the generated age data, assigned groups, and a filtered sample based on the selected group.
-- **Contents:**
-  - **Data:** The ages copied from the `Data` sheet.
-  - **Groups:** The group numbers assigned to each age.
-  - **Sample Data:** Ages from one of the groups (chosen between 1, 2, 3, or 4).
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
-
-### Sheet 4. `Statistical Insight`
-
-- **Description:** This sheet provides statistical insights and calculations based on the sample data.
-- **Contents:**
-  - **STDDEV:** Standard deviation of the sample.
-  - **EXPECTED VALUE:** The expected value (mean) of the sample.
-  - **COUNT:** The count of numbers in the sample.
-  - **CONFIDENCE RATE:** The confidence level used for the confidence interval.
-  - **Estimation of p parameter:** p-value estimation.
-  - **Confidence Interval:** The confidence interval for the sample mean.
-  - **Explanation:** A text box explaining the obtained values and their significance.
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
-
-### Sheet 5. `Uncorrelated Variables`
-
-- **Description:** This sheet explores the correlation between age and the number of cats, and between age and the age of a partner.
-- **Contents:**
-  - **Sample Data:** Ages copied from the `Sample` sheet.
-  - **Number of Cats:** Random numbers from 1 to 7.
-  - **Age of Partner:** Age calculated based on correlation and other variables.
-  - **Correlation Analysis:** Calculates and explains the correlation between age and the number of cats.
-  - **Actual Correlation:** The actual calculated correlation.
-  - **Explanation:** A text box explaining the results of the correlation analysis.
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
-
-### Sheet 6. `Linear Regression`
-
-- **Description:** This sheet contains a linear regression analysis between age and rank.
-- **Contents:**
-  - **Y (age):** Ages of the sample and partners.
-  - **X (rank):** A progressive integer indicating the order of sampling.
-  - **Scatterplot:** Scatterplot of age versus rank.
-  - **Regression Analysis:** Linear regression for the 160th participant.
-  - **Explanation:** A text box explaining the results of the linear regression.
-- **Styling:** 
-  - **Header Font:** Comics Sans MS, 12pt, blue color.
-  - **Borders:** Double border around header; single border around other cells.
-  - **Cell Background:** White with no borders or lines outside the table.
+La creazione e manipolazione di dati verosimili attraverso questo progetto fornisce all'azienda un ambiente di apprendimento simulato che consente ai dipendenti di approfondire concetti statistici e tecniche di analisi in modo efficace e pratico.
+Contributi e feedback sono benvenuti!
